@@ -1,0 +1,18 @@
+Both CPUs and GPUs are separate entities; they have their own memory space respectively. 
+CPU can not directly access GPU memory, and vice versa GPU memory can not access CPU space directly. 
+
+In CUDA terminology, 
+-- CPU memory is called host memory and GPU memory is called device memory. 
+-- Pointers relevant to CPU memory are called host pointer and pointers relevant GPU memory are called device pointer.
+
+If GPU need to work with data, it must be presented in the device memory. 
+CUDA provides APIs for allocating and deallocating/freeing device memory,
+also provides APIs for transfering data between host and device memory. 
+
+Common workflow of CUDA program looks like as following:
+
+-- Allocate host memory and initialize host data 
+-- Allocate device memory
+-- Transfer input data from host memory to device memory
+-- Execute kernels
+-- Transfer output from device memory to host memory
