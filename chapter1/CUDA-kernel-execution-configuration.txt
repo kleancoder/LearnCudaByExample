@@ -1,6 +1,6 @@
-CUDA uses a kernel execution configuration <<< .,. >>>
+CUDA uses a kernel execution configuration <<< ... >>>
 
-<<< .,. >>> this execution configuration tells the runtime of CUDA how many threads 
+<<< ... >>> this execution configuration tells the runtime of CUDA how many threads 
 to lanuch on GPU. 
 
 CUDA organizes threads into a group; that thread gropu being called as "thread block"
