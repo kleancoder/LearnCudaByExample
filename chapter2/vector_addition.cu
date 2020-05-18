@@ -1,4 +1,4 @@
-#define N 99999
+#define N 9999
 
 __global__  void vector_addition (int *a, int *b, int *c, int n) {
   for (int i=0; i<n; i++) {
@@ -50,5 +50,4 @@ int main(){
   free(a);
   free(b);
   free(c);
-  
 }
