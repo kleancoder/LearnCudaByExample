@@ -11,7 +11,7 @@ int main() {
 }
 
 in CUDA
-=====
+=======
 
 __global__ void cuda_say_hi() {
   printf("Hi, CUDA!\n");
@@ -22,10 +22,10 @@ int main() {
   return 0;
 }
 
-The major difference between C and CUDA implemntation is __global__specified and 
+The major difference between C and CUDA implemntation is the __global__specified and 
 kernel launch <<< ... >>> syntax. 
 
-What is __global__ specifier? The __global__ specifier indicates a function that runs 
+By the way, what is __global__ specifier? The __global__ specifier indicates a function that runs 
 on GPU (the device). 
 
 While a kernel being called, its execution configuration is provided through <<< ... >>> syntax. 
